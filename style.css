@@ -120,7 +120,7 @@ section {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.projects .proj-content
+.projects .proj-content,
 .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +258,7 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    width: calc(50%-30px);
+    width: calc(50% - 30px);
 }
 
 
