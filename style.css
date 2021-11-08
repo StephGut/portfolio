@@ -265,11 +265,31 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .right .bars{
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background:rgb(46, 175, 235);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
     margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(46, 175, 235);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(46, 175, 235);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 20px;
 }
 .skills .skills-content .right .info{
     display: flex;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
@@ -390,8 +410,14 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
+
+contact section styling
+
 
 @media (max-width: 650px){
     .max-width{
