@@ -48,6 +48,7 @@ html{
     display: inline-block;
 }
 .navbar .menu li a{
+    display: block;
     color: darkslategray;
     font-size: 18px;
     font-weight: 500;
@@ -65,8 +66,33 @@ html{
     color:darkslategray;
     font-size: 23px;
     cursor: pointer;
-    display: none;
 }
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: chocolate;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 
 /* home section styling */
 .home{
