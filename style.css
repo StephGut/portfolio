@@ -116,12 +116,13 @@
 section {
     padding: 100px 0;
 }
-.about, .projects, .skills{
+.about, .projects, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .projects .proj-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -217,8 +218,7 @@ section .title::after{
 }
 .projects .title::after{
     background: #111;
-    content: "what i've done"
-
+    content: "what i've done";
 }
 .projects .proj-content .card{
     width: calc(33% - 20px);
@@ -416,7 +416,81 @@ section .title::after{
     }
 }
 
-contact section styling
+/* contact section styling */
+.contact{
+    color: #fff;
+    background:#111;
+}
+.contact .title::before{
+    background: #fff;
+}
+.contact .title::after{
+    background: #111;
+    content: "get in touch";
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align:  justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: tomato;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #fff;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 @media (max-width: 650px){
